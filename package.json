@@ -4,7 +4,7 @@
   "description": "",
   "main": "run.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "bower install && npm install"
   },
   "author": "",
   "license": "ISC",
