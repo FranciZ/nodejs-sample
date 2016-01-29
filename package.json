@@ -4,8 +4,8 @@
   "description": "",
   "main": "run.js",
   "scripts": {
-    "start": "node run.js",
-    "install": "npm install"
+    "install": "npm install",
+    "start": "node run.js"
   },
   "engines": {
     "node": "4.1.1",
