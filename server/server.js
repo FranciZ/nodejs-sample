@@ -11,6 +11,8 @@ var app = express();
 var multipartMiddleware = multipart({ uploadDir: './public/images' });
 
 
+var port = process.env.PORT || 8080;
+
 exports.start = function(){
 
     app.use('/cms', express.static('cms-dev'));
@@ -24,7 +26,7 @@ exports.start = function(){
         // don't forget to delete all req.files when done
     });
 
-    app.listen(3000, function(){
+    app.listen(port, function(){
 
         console.log('Server running');
 
