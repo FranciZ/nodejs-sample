@@ -4,7 +4,6 @@
   "description": "",
   "main": "run.js",
   "scripts": {
-    "install": "npm install",
     "start": "node run.js"
   },
   "engines": {
