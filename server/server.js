@@ -22,7 +22,7 @@ exports.start = function(){
 
     app.post('/upload', multipartMiddleware, function(req, res) {
         console.log(req.body, req.files);
-        res.send('done');
+        res.sendStatus(200);
         // don't forget to delete all req.files when done
     });
 
