@@ -3,7 +3,7 @@ angular.module('cms').controller('ProjectsCtrl',function($scope, Upload){
     // upload on file select or drop
     $scope.upload = function (file) {
         Upload.upload({
-            url: 'https://localhost:3000/upload',
+            url: '/upload',
             data: {file: file, 'username': $scope.username}
         }).then(function (resp) {
             console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
