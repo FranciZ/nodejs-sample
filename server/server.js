@@ -18,7 +18,7 @@ exports.start = function(){
     app.use('/cms', express.static('./public/cms'));
 
     app.use('/images', serveIndex('./public/images'));
-    app.use('/images', express.static('./public/images'));
+    app.use('/images', express.static(' ./public/images'));
 
     app.post('/upload', multipartMiddleware, function(req, res) {
         console.log(req.body, req.files);
