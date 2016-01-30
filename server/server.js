@@ -15,7 +15,7 @@ var port = process.env.PORT || 8080;
 
 exports.start = function(){
 
-    app.use('/cms', express.static('cms-dev'));
+    app.use('/cms', express.static('./public/cms'));
 
     app.use('/images', serveIndex('./public/images'));
     app.use('/images', serveStatic('./public/images'));
